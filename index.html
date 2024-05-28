@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Learning Vue</title>
     <script src="https://unpkg.com/vue@3.0.2"></script>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Hello vue!</h1>
 
     <div id="app">
-<p>The Final Empire</p>
-    </div>
-    <p>Not here</p>
-    <script src="app.js"></script>
-</body>
+      <p>{{ title }} - {{ author }} - {{ age }}</p>
 
+      <button v-on:click="age++">Increase age</button>
+      <button v-on:click="age--">Decrease age</button>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
 </html>
